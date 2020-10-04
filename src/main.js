@@ -5,13 +5,16 @@ import App from './App'
 import router from './router'
 import firebase from 'firebase'
 
+const env = process.env
+console.log(env.API_KEY)
+
 Vue.config.productionTip = false
 
 const config = {
-  apiKey: 'AIzaSyDW8Ckho34AxCH58yglnx3K9Jaak9xsTlg',
-  authDomain: 'project-9067647457.firebaseapp.com',
-  databaseURL: 'project-9067647457.firebaseio.com',
-  projectId: 'buta7-96529',
+  apiKey: env.API_KEY,
+  authDomain: env.AUTH_DOMAIN,
+  databaseURL: env.DATABASE_URL,
+  projectId: env.PROJECT_ID,
   storageBucket: 'YOUR_BUCKET_ID.appspot.com',
   messagingSenderId: 'YOUR_SENDER_ID'
 }

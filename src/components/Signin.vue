@@ -23,7 +23,9 @@ export default {
   methods: {
     signIn: function () {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(res => {
-        localStorage.setItem('jwt', res.user.qa)
+        //console.log(res.user)
+        //localStorage.setItem('token', res.user.qa)
+        localStorage.setItem('token', res.user.xa)
         this.$router.push('/')
       }, err => {
         alert(err.message)

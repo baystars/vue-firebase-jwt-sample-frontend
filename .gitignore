@@ -18,3 +18,7 @@ selenium-debug.log
 *=
 *.bak
 package-lock.json
+config/dev.env.js
+config/test.env.js
+*~
+*.bak
